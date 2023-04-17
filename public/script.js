@@ -46,6 +46,7 @@ sndbtnn.addEventListener('click', () => {
 }); 
 
 
+
 //receive message
 socket.on("message", (data) => {
     if (data.username !== username) {
