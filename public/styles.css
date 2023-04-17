@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.username-form{
+    
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 10px;
+    width: 30%;
+    min-width: 300px;
+    box-shadow: 4px 4px 15px 5px rgba(0, 0, 0, 0.4);
+    /* display: none; */
+}
+#username-input{
+   padding: 6px 3px;
+   width: 100%;
+   outline: none;
+}
+
+#join-btn{
+  background-color: black;
+  color: white;
+  border: none;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+}
+.chat-box-container{
+    border: 1px solid black;
+    width:60%;
+    min-width: 300px;
+    height: 90%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.header{
+    background-color: black;
+    color: white;   
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.header>span{
+    font-size: 24px;
+    font-family: 'Delicious Handrawn', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.header>button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    width:60px;
+    cursor: pointer;
+}
+
+.chatbox{
+    /* border: 1px solid black; */
+    height:90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 15px;
+    padding: 10px;
+}
+
+.chatbox>.message{
+    background-color: #e1e1e1;
+    width: fit-content;
+    padding: 5px 10px;
+}
+.chatbox>.received{
+    align-self: flex-start;
+}
+.chatbox>.sent{
+   align-self: flex-end;
+   background-color: black;
+   color: white;
+}
+.chatbox>.notify{
+    align-self: center;
+}
+.input-send{
+    /* border: 1px solid black; */
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.input-send>input{
+    width: 80%;
+    height: 35px;
+    /* border: 1px solid black; */
+    font-size: 16px;
+}
+.input-send>button{
+    width: 20%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Poppins:wght@100;200;300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+        <form action="" class="username-form">
+            <h1>Join Chatroom</h1>
+            <label for="username-input">Enter Your Username:</label>
+            <input type="text" name="username" placeholder="Username" id="username-input" required>
+            <button type="submit" id="join-btn">Join</button>
+        </form>
+        <div class="chat-box-container">
+            <div class="header">
+                <span>Chatroom</span>
+                <button id="exit-chatroom">Exit</button>
+            </div>
+            <div class="chatbox">
+                <!-- <div class="message received">hi</div>
+                <div class="message sent">hihello</div>
+                <div class="message sent">hi</div>
+                <div class="message received">hi</div> -->
+                
+            </div>
+            <div class="input-send">
+                <input type="text" name="message"  id="message-input" placeholder="Enter message..">
+                <button type="button" id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
